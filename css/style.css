@@ -4,33 +4,36 @@
     margin-left: 16px;
 }
 
-.lang-btn {
+.lang-link {
     border: 1px solid var(--border);
     background: white;
     color: var(--primary);
     padding: 8px 12px;
     border-radius: 999px;
     font-weight: 700;
-    cursor: pointer;
+    text-decoration: none;
     transition: all 0.2s ease;
 }
 
-.lang-btn:hover {
+.lang-link:hover {
     background: #eef4fb;
 }
 
-.lang-btn.active {
+.lang-link.active {
     background: var(--primary);
     color: white;
     border-color: var(--primary);
 }
 
-@media (max-width: 768px) {
-    .language-switcher {
-        margin-left: 0;
-    }
+.profile-photo {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 4px solid #e6eef7;
+}
 
-    .nav-container {
-        gap: 12px;
-    }
+.profile-card {
+    text-align: center;
 }
