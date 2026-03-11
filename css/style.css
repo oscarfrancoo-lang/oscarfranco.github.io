@@ -1,5 +1,5 @@
 :root {
-    --bg: #f5f7fb;
+    --bg: #f4f7fb;
     --bg-alt: #edf2f7;
     --surface: #ffffff;
     --text: #1f2937;
@@ -8,7 +8,7 @@
     --primary-dark: #163b69;
     --border: #d9e2ec;
     --shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
-    --radius: 18px;
+    --radius: 16px;
     --container: 1150px;
 }
 
@@ -34,8 +34,8 @@ img {
 }
 
 a {
-    text-decoration: none;
     color: inherit;
+    text-decoration: none;
 }
 
 .container {
@@ -47,7 +47,7 @@ a {
     position: sticky;
     top: 0;
     z-index: 1000;
-    background: rgba(255, 255, 255, 0.95);
+    background: rgba(255, 255, 255, 0.92);
     backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--border);
 }
@@ -56,16 +56,15 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    min-height: 78px;
+    min-height: 76px;
     gap: 16px;
 }
 
 .brand a {
     font-size: 1.1rem;
-    font-weight: 800;
+    font-weight: 700;
     color: var(--primary);
     letter-spacing: 0.2px;
-    white-space: nowrap;
 }
 
 nav {
@@ -75,15 +74,15 @@ nav {
 .nav-list {
     list-style: none;
     display: flex;
-    gap: 22px;
+    gap: 24px;
     margin: 0;
     padding: 0;
 }
 
 .nav-list a {
-    font-size: 0.95rem;
-    font-weight: 600;
     color: var(--text);
+    font-weight: 600;
+    font-size: 0.95rem;
     transition: color 0.2s ease;
 }
 
@@ -97,13 +96,12 @@ nav {
 }
 
 .lang-link {
-    padding: 8px 12px;
-    border-radius: 999px;
     border: 1px solid var(--border);
     background: white;
     color: var(--primary);
+    padding: 8px 12px;
+    border-radius: 999px;
     font-weight: 700;
-    font-size: 0.9rem;
     transition: all 0.2s ease;
 }
 
@@ -119,7 +117,7 @@ nav {
 
 .menu-toggle {
     display: none;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     background: transparent;
     border: none;
     cursor: pointer;
@@ -127,13 +125,13 @@ nav {
 }
 
 .hero {
-    padding: 84px 0 64px;
-    background: linear-gradient(180deg, #ffffff 0%, #f5f7fb 100%);
+    padding: 80px 0 60px;
+    background: linear-gradient(180deg, #ffffff 0%, #f4f7fb 100%);
 }
 
 .hero-grid {
     display: grid;
-    grid-template-columns: 1.35fr 0.95fr;
+    grid-template-columns: 1.4fr 0.9fr;
     gap: 36px;
     align-items: center;
 }
@@ -145,22 +143,23 @@ nav {
     border-radius: 999px;
     background: #e8f0fb;
     color: var(--primary);
-    font-size: 0.84rem;
+    font-size: 0.85rem;
     font-weight: 700;
 }
 
 .hero h1 {
-    margin: 0 0 18px;
-    font-size: clamp(2.3rem, 4vw, 4rem);
-    line-height: 1.08;
+    margin: 0 0 20px;
+    font-size: clamp(2.2rem, 4vw, 3.8rem);
+    line-height: 1.1;
     letter-spacing: -0.03em;
+    max-width: 760px;
 }
 
 .hero-description {
-    margin: 0 0 28px;
-    font-size: 1.06rem;
+    font-size: 1.05rem;
     color: var(--muted);
     max-width: 700px;
+    margin-bottom: 28px;
 }
 
 .hero-buttons {
@@ -173,7 +172,7 @@ nav {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    min-height: 48px;
+    min-height: 46px;
     padding: 0 20px;
     border-radius: 999px;
     font-weight: 700;
@@ -206,43 +205,43 @@ nav {
 
 .profile-card {
     width: 100%;
-    max-width: 380px;
     background: var(--surface);
     border: 1px solid var(--border);
     border-radius: 24px;
-    padding: 30px;
+    padding: 28px;
     box-shadow: var(--shadow);
     text-align: center;
 }
 
 .profile-photo {
-    width: 150px;
-    height: 150px;
+    width: 140px;
+    height: 140px;
     border-radius: 50%;
     object-fit: cover;
-    margin: 0 auto 16px;
-    border: 5px solid #e8eef7;
+    margin: 0 auto 15px;
+    border: 4px solid #e6eef7;
 }
 
 .profile-card h2 {
-    margin: 0 0 8px;
+    margin-top: 0;
+    margin-bottom: 8px;
     color: var(--primary);
 }
 
 .role {
-    margin: 0 0 18px;
     color: var(--muted);
     font-weight: 600;
+    margin-bottom: 20px;
 }
 
 .profile-highlights {
-    text-align: left;
     margin: 0;
     padding-left: 20px;
+    text-align: left;
 }
 
 .section {
-    padding: 72px 0;
+    padding: 70px 0;
 }
 
 .section-alt {
@@ -257,8 +256,8 @@ nav {
     display: inline-block;
     margin-bottom: 10px;
     color: var(--primary);
-    font-size: 0.88rem;
-    font-weight: 800;
+    font-weight: 700;
+    font-size: 0.9rem;
     text-transform: uppercase;
     letter-spacing: 0.08em;
 }
@@ -275,12 +274,6 @@ nav {
     border-radius: var(--radius);
     padding: 26px;
     box-shadow: var(--shadow);
-}
-
-.card h3 {
-    margin-top: 0;
-    margin-bottom: 12px;
-    color: var(--primary);
 }
 
 .resume-grid,
@@ -307,6 +300,12 @@ nav {
     grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.card h3 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    color: var(--primary);
+}
+
 .clean-list {
     margin: 0;
     padding-left: 20px;
@@ -328,7 +327,7 @@ nav {
     border-radius: 999px;
     background: #edf4ff;
     color: var(--primary);
-    font-size: 0.84rem;
+    font-size: 0.85rem;
     font-weight: 700;
 }
 
@@ -349,25 +348,21 @@ nav {
 
 .site-footer p {
     margin: 0;
-    text-align: center;
     color: var(--muted);
+    text-align: center;
 }
 
-@media (max-width: 1100px) {
-    .project-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
-    .skills-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
-    .contact-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+@media (max-width: 1024px) {
+    .hero-grid,
+    .project-grid,
+    .skills-grid,
+    .contact-grid,
+    .resume-grid {
+        grid-template-columns: 1fr 1fr;
     }
 }
 
-@media (max-width: 860px) {
+@media (max-width: 768px) {
     .menu-toggle {
         display: block;
     }
@@ -378,7 +373,7 @@ nav {
 
     .nav-list {
         position: absolute;
-        top: 78px;
+        top: 76px;
         right: 4%;
         left: 4%;
         display: none;
@@ -396,19 +391,23 @@ nav {
     }
 
     .hero {
-        padding-top: 54px;
+        padding-top: 48px;
     }
 
     .hero-grid,
-    .resume-grid,
     .project-grid,
     .skills-grid,
-    .contact-grid {
+    .contact-grid,
+    .resume-grid {
         grid-template-columns: 1fr;
     }
 
     .hero h1 {
-        font-size: 2.3rem;
+        font-size: 2.2rem;
+    }
+
+    .section {
+        padding: 56px 0;
     }
 
     .nav-container {
